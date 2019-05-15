@@ -1,18 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Container from "./Container";
-import { Provider } from "unstated";
-
-kintone.events.on("app.record.index.show", ev => {
+kintone.events.on("app.record.index.show", (ev) => {
   const root = kintone.app.getHeaderMenuSpaceElement();
   ReactDOM.render(<App />, root);
   return ev;
 });
 
-function App() {
-  return (
-    <Provider>
-      <Container />
-    </Provider>
-  );
-}
+// Question1. 
+// Appという名前のコンポーネントを作成する
+
+// Question2. 
+// Appの中にボタンとダイアログを@kintone/kintone-ui-componentに配置する
+
+// Question3.
+// Appコンポーネントにプロパティを追加する。
+// Appコンポーネントのプロパティをダイアログのタイトルに表示する
+
+// Question4.
+// Appコンポーネントでボタンがクリックされた回数を管理できるようにする
+// ヒント: unstatedを使う
+
+// Question5.
+// ボタンをクリックするとダイアログが表示され、
+// ダイアログのボタンをクリックするとダイアログが閉まる
+// Appコンポーネントを作成する
